@@ -106,6 +106,7 @@
         width: 9vw;
         height: 40px;
         padding: 5px;
+        padding-left: 10px;
         border: solid 1px white;
         border-radius: 0px;
         text-align: center;
@@ -132,7 +133,9 @@
         align-items: center;
         border-radius: 0px;
     }
-
+    select{
+        padding-left: 10px;
+    }
     select:focus{
         width: 9vw;
         height: 40px;
