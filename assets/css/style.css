@@ -30,6 +30,7 @@
     outline:none;
     border-radius: 0px;
     text-align:center;
+    text-align-last: center;
   }
   
   /* Removes default bullet points from lists */
@@ -62,6 +63,8 @@
     .scorecard{
      display:flex;
      flex-direction: row;
+     justify-content: center;
+     align-items: center;
      box-shadow: 10px 10px 10px grey;
      border: black solid 1px;
     }
@@ -102,6 +105,7 @@
     .cell{
         width: 9vw;
         height: 40px;
+        padding: 5px;
         border: solid 1px white;
         border-radius: 0px;
         text-align: center;
