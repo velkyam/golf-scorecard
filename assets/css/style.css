@@ -25,6 +25,10 @@
   pre, code {
     font-size: 100%;
     font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline:none;
+    border-radius: 0px;
   }
   
   /* Removes default bullet points from lists */
@@ -96,6 +100,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: black;
     }
 
     .column{
@@ -125,15 +130,9 @@
         border-radius: 0px;
         outline: none;
     }
-    select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    }
+  
     input:focus{
         outline:none;
-    }
-    input{
-        border-radius: 0px;
     }
 
     .teamscore{
