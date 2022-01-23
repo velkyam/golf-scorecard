@@ -39,7 +39,7 @@
     /* ---------------------------------------------------------------------------------------- */
     header{
         height: 60px;
-        background: linear-gradient(to right,#fff, darkgreen 50%);
+        background-color: #40955a;
         color: white;
         display: flex;
         flex-direction: row;
@@ -50,7 +50,7 @@
         font-size: 200%;
         text-align: center;
         padding: 0;
-        margin: 0;
+        margin: 30px;
     }
     
     #resetBtn{
@@ -61,16 +61,24 @@
     .scorecard{
      display:flex;
      flex-direction: row;
+     box-shadow: 10px 10px 10px grey;
     }
 
     .toprow{
         background-color: white;
     }
-    .team1{
-        background-color: royalblue;
+    .player1{
+        background-color: #73afe4
     }
-    .team2{
-        background-color:tomato
+    .player2{
+        background-color: #9bbde8
+    }
+
+    .player3{
+        background-color:#febac5
+    }
+    .player4{
+        background-color:#fc6880
     }
     .total{
         width: 9vw;
@@ -129,6 +137,7 @@
         align-items: center;
         border-radius: 0px;
         outline: none;
+        border: solid greenyellow 2px;
     }
   
     input:focus{
@@ -138,7 +147,6 @@
     .teamscore{
         height: 120px;
         width: 50vw;
-        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -147,30 +155,41 @@
     }
 
     #blue{
-        color:royalblue;
+        color:#73afe4;
         margin: 30px;
         font-weight: bold;
         font-size: 36px;
     }
     .blue{
-        color:royalblue; 
+        color:#73afe4; 
         padding: 14px;
-        border: solid royalblue 2px;
+        border: solid #73afe4 2px;
     }
     #red{
-        color:tomato;
+        color:#fc6880;
         margin: 30px;
         font-weight: bold;
         font-size: 36px;
     }
     .red{
-        color: tomato;
+        color: #fc6880;
         padding: 14px;
-        border: solid tomato 2px;
+        border: solid #fc6880 2px;
     }
 
     #difference{
         margin: 30px;
         font-size: 60px;
         font-weight: bold;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0px;
+        height:60px;
+        width: 100%;
+        background-color: #40955a;
+        text-align: center;
+        color:white;
+        padding: 20px;
     }
