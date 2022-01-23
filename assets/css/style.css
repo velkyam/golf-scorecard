@@ -1,0 +1,162 @@
+/* Resets the box size of every element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Gives the body element a parent height to compare against */
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+  }
+  
+  /* Matches the font of special elements to the rest of the page */
+  input, select, option, optgroup, textarea, button,
+  pre, code {
+    font-size: 100%;
+    font-family: inherit;
+  }
+  
+  /* Removes default bullet points from lists */
+  ol, ul {
+      list-style: none;
+    }
+    
+    /* ---------------------------------------------------------------------------------------- */
+    header{
+        height: 60px;
+        background-color: darkgreen;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } 
+    header h1{
+        font-size: 200%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #resetBtn{
+        position: absolute;
+        right: 20px;
+    }
+
+    .scorecard{
+     display:flex;
+     flex-direction: row;
+ }
+
+ .toprow{
+     background-color: white;
+ }
+ .team1{
+     background-color: royalblue;
+ }
+ .team2{
+     background-color:tomato
+ }
+.total{
+    width: 11.6vw;
+    height: 40px;
+    border: solid 1px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    width: 20vw;
+    height: 40px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.cell{
+    width: 7.6vw;
+    height: 40px;
+    border: solid 1px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.label{
+    width: 20vw;
+    height: 40px;
+    border: solid 1px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select:focus{
+    border: solid darkgreen 4px;
+    width: 7.6vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamscore{
+    height: 120px;
+    width: 50vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+#blue{
+    color:royalblue;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 36px;
+}
+.blue{
+    color:royalblue; 
+    padding: 14px;
+    border: solid royalblue 2px;
+}
+#red{
+    color:tomato;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 36px;
+}
+.red{
+    color: tomato;
+    padding: 14px;
+    border: solid tomato 2px;
+}
+
+#difference{
+    margin: 30px;
+    font-size: 60px;
+    font-weight: bold;
+}

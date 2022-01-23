@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Scorecard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header>
+  <h1>Scorecard</h1>
+  <button type="button" class="btn btn-light btn-sm" id="resetBtn">Reset</button>
+</header>
+      <div class="scorecard">
+    
+        <div class="column">
+          <div class="label toprow">Player</div>
+          <input id="" class="name team1" type="string"></input>
+          <input id="" class="name team1" type="string"></input>
+          <input id="" class="name team2" type="string"></input>
+          <input id="" class="name team2" type="string"></input>
+        </div>
+        
+        <div class="column">
+          <div class="cell toprow">1</div>
+          <select class="cell team1" value=0 id="p1h1">
+            <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h1">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h1">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h1">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        
+        <div class="column">
+          <div class="cell toprow">2</div>
+          <select class="cell team1" value=0 id="p1h2">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h2">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h2">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h2">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        <div class="column">
+          <div class="cell toprow">3</div>
+          <select class="cell team1" value=0 id="p1h3">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h3">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h3">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h3">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        <div class="column">
+          <div class="cell toprow">4</div>
+          <select class="cell team1" value=0 id="p1h4">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h4">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h4">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h4">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        <div class="column toprow">
+          <div class="cell">5</div>
+          <select class="cell team1" value=0 id="p1h5">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h5">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h5">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h5">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+         
+        <div class="column toprow">
+          <div class="cell">6</div>
+          <select class="cell team1" value=0 id="p1h6">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h6">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h6">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h6">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+         
+        <div class="column toprow">
+          <div class="cell">7</div>
+          <select class="cell team1" value=0 id="p1h7">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h7">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h7">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h7">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+          
+        <div class="column">
+          <div class="cell toprow">8</div>
+          <select class="cell team1" value=0 id="p1h8">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h8">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h8">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h8">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+ 
+        <div class="column">
+          <div class="cell toprow">9</div>
+          <select class="cell team1" value=0 id="p1h9">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h9">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h9">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h9">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+
+        <div class="column">
+          <div class="total toprow">Tot</div>
+          <div class="total team1" id="total1"></div>
+          <div class="total team1" id="total2"></div>
+          <div class="total team2" id="total3"></div>
+          <div class="total team2" id="total4"></div>
+        </div>
+      </div>
+      <!-- half -->
+      <div class="teamscore">
+        <h2 id='blue'></h2>
+        <div id='difference'></div>
+        <h2 id='red'></h2>
+      </div>
+
+      <div class="scorecard">
+    
+        <div class="column">
+          <div class="label toprow">Player</div>
+          <input id="" class="name team1" type="string"></input>
+          <input id="" class="name team1" type="string"></input>
+          <input id="" class="name team2" type="string"></input>
+          <input id="" class="name team2" type="string"></input>
+        </div>
+        
+        <div class="column">
+          <div class="cell toprow">10</div>
+          <select class="cell team1" value=0 id="p1h10">
+            <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h10">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h10">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h10">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        
+        <div class="column">
+          <div class="cell toprow">11</div>
+          <select class="cell team1" value=0 id="p1h11">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h11">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h11">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h11">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        <div class="column">
+          <div class="cell toprow">12</div>
+          <select class="cell team1" value=0 id="p1h12">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h12">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h12">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h12">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        <div class="column">
+          <div class="cell toprow">13</div>
+          <select class="cell team1" value=0 id="p1h13">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h13">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h13">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h13">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+        <div class="column toprow">
+          <div class="cell">14</div>
+          <select class="cell team1" value=0 id="p1h14">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h14">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h14">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h14">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+         
+        <div class="column toprow">
+          <div class="cell">15</div>
+          <select class="cell team1" value=0 id="p1h15">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h15">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h15">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h15">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+         
+        <div class="column toprow">
+          <div class="cell">16</div>
+          <select class="cell team1" value=0 id="p1h16">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h16">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h16">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h16">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+          
+        <div class="column">
+          <div class="cell toprow">17</div>
+          <select class="cell team1" value=0 id="p1h17">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h17">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h17">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h17">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+ 
+        <div class="column">
+          <div class="cell toprow">18</div>
+          <select class="cell team1" value=0 id="p1h18">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team1" value=0 id="p2h18">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p3h18">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <select class="cell team2" value=0 id="p4h18">
+              <option selected value=0></option>
+            <option value=-3>-3</option>
+            <option value=-2>-2</option>
+            <option value=-1>-1</option>
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+        </div>
+
+        <div class="column">
+          <div class="total toprow">Tot</div>
+          <div class="total team1" id="total11"></div>
+          <div class="total team1" id="total22"></div>
+          <div class="total team2" id="total33"></div>
+          <div class="total team2" id="total44"></div>
+        </div>
+
+      </div>
+  
+        
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>
