@@ -244,9 +244,7 @@
         }
 
     footer{
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
+     
         height:60px;
         width: 100%;
         background-color: #40955a;
