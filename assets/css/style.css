@@ -29,7 +29,7 @@
     -moz-appearance: none;
     outline:none;
     border-radius: 0px;
-    text-align-last:center;
+    text-align:center;
   }
   
   /* Removes default bullet points from lists */
