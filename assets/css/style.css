@@ -29,6 +29,7 @@
     -moz-appearance: none;
     outline:none;
     border-radius: 0px;
+    text-align-last:center;
   }
   
   /* Removes default bullet points from lists */
@@ -62,11 +63,10 @@
      display:flex;
      flex-direction: row;
      box-shadow: 10px 10px 10px grey;
+     border: black solid 1px;
     }
 
-    .toprow{
-        background-color: white;
-    }
+    
     .player1{
         background-color: #73afe4
     }
@@ -83,7 +83,7 @@
     .total{
         width: 9vw;
         height: 40px;
-        border: solid 1px black;
+        border: solid 1px white;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -94,7 +94,7 @@
     .name{
         width: 10vw;
         height: 40px;
-        border: solid 1px black;
+        border: solid 1px white;
         text-align: center;
         border-radius: 0px;
     }
@@ -102,7 +102,7 @@
     .cell{
         width: 9vw;
         height: 40px;
-        border: solid 1px black;
+        border: solid 1px white;
         border-radius: 0px;
         text-align: center;
         display: flex;
@@ -121,7 +121,7 @@
     .label{
         width: 10vw;
         height: 40px;
-        border: solid 1px black;
+        border: solid 1px white;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -182,6 +182,13 @@
         font-size: 60px;
         font-weight: bold;
     }
+
+    .toprow{
+        background-color: white;
+       
+    }
+
+ 
 
     footer{
         position: absolute;
