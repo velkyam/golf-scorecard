@@ -185,7 +185,13 @@
 
     .toprow{
         background-color: white;
+        border-right: black 1px solid;
+    
        
+    }
+
+    .p1row{
+        border-top: black 1px solid;
     }
 
  
