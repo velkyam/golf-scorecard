@@ -3,6 +3,16 @@ let red =document.querySelector("#red")
 let difference =document.querySelector("#difference")
 let image =document.querySelector("#img1")
 
+let name1 = document.querySelector("#name1")
+let name2 = document.querySelector("#name2")
+let name3 = document.querySelector("#name3")
+let name4 = document.querySelector("#name4")
+
+let name11 = document.querySelector("#name11")
+let name22 = document.querySelector("#name22")
+let name33 = document.querySelector("#name33")
+let name44 = document.querySelector("#name44")
+
 let total1 = document.querySelector('#total1')
 let total2 = document.querySelector('#total2')
 let total3 = document.querySelector('#total3')
