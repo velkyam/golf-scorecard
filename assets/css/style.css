@@ -35,7 +35,7 @@
     /* ---------------------------------------------------------------------------------------- */
     header{
         height: 60px;
-        background-color: darkgreen;
+        background: linear-gradient(to right,#fff, darkgreen 50%);
         color: white;
         display: flex;
         flex-direction: row;
@@ -76,7 +76,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: none;
+        border-radius: 0px;
     }
 
     .name{
@@ -84,14 +84,14 @@
         height: 40px;
         border: solid 1px black;
         text-align: center;
-        border-radius: none;
+        border-radius: 0px;
     }
 
     .cell{
         width: 9vw;
         height: 40px;
         border: solid 1px black;
-        border-radius: none;
+        border-radius: 0px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -113,7 +113,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: none;
+        border-radius: 0px;
     }
 
     select:focus{
@@ -122,15 +122,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: none;
+        border-radius: 0px;
         outline: none;
     }
     select{
-        -webkit-appearance: none;
-  -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     }
     input:focus{
         outline:none;
+    }
+    input{
+        border-radius: 0px;
     }
 
     .teamscore{
