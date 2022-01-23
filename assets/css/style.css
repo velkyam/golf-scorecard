@@ -158,7 +158,6 @@
         justify-content: center;
         align-items: center;
         margin: 20px auto;
-        border: dashed greenyellow 3px;
         border-radius: 14px;
     }
 
@@ -242,11 +241,11 @@
             display: block;
             height: 100%;
             width: 100%;
-            z-index: -1;
         }
 
     footer{
         position: absolute;
+        right: 0px;
         bottom: 0px;
         height:60px;
         width: 100%;
